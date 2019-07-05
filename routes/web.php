@@ -14,6 +14,9 @@
 //route for home page
 Route::get('/', 'HomeController@index')->name('index');
 
+//route for ajax requests
+Route::post('/add-to-card', 'ajaxRequestsController@addToCard')->name('add-to-card');
+
 
 
 Auth::routes();

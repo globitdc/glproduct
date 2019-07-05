@@ -3,23 +3,3 @@
 	padding:0;
 }
 
-#top-box{
-	background-image: url(../images/yourstory-zomato-Feature.png);
-	background-position: center;
-	background-size: cover;
-}
-.white-color{
-	color: white;
-	font-family: initial;
-	font-size: 4.5rem;
-}
-.top-box-text{
-	font-size: 4.5rem;
-	text-align: center;
-	padding: 90px 90px 10px 90px;
-	color: white;
-	font-family: initial;
-}
-.center-top-box{
-	position: relative;
-}
