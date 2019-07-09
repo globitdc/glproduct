@@ -66,3 +66,20 @@ h6{
   background: linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05abe0', endColorstr='#8200f4',GradientType=1 );
 }
+
+.basket-icon{
+  width: 50px;
+  cursor: pointer;
+  margin: 10px;
+  
+}
+.basket-tools-children-div{
+  align-items: right;
+  width: 10%;
+  margin-right: 10px;
+  background: lightgrey;  
+  float: right;
+}
+.basket-tools-children-div img{
+  width: 100px;
+}
