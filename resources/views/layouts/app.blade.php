@@ -21,6 +21,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/top-menu.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/forInputsTypeData.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -29,8 +30,7 @@
             <div class="selector"></div>
             <a href="#" class="active"><i class="fab fa-superpowers"></i>Home</a>
             <a href="#"><i class="fas fa-hand-rock">About us</i></a>
-            <a href="#"><i class="fas fa-hand-rock">About us just for testing git</i></a>
-            <a href="#"><i class="fas fa-bolt"></i>page 3</a>
+            <a href="{{ route('transporting') }}" class="transporting"><i class="fas fa-bolt"></i>Transporting</a>
             <a href="#"><i class="fas fa-burn"></i>page 4</a>
           </nav>
         </div>
@@ -40,5 +40,10 @@
     </div>
     <script type="text/javascript" src = {{asset('assets/js/top-menu.js')}}></script>
     <script type="text/javascript" src = {{asset('assets/js/homePageFunctions.js')}}></script>
+    <script type="text/javascript" src = {{asset('assets/js/transporting.js')}}></script>
 </body>
 </html>
+
+
+
+

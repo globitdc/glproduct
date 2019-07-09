@@ -22,3 +22,20 @@ Route::post('/add-to-card', 'ajaxRequestsController@addToCard')->name('add-to-ca
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// route for transporting
+Route::get('/transporting', 'TransportingsController@transporting')->name('transporting');
+
+ // Getting data from inputs, that user filled in order to set a direction
+Route::post('/store', 'TransportingsController@store');
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,69 @@
+/* Removes the clear button from date inputs */
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button { 
+    display: none;
+}
+
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #2c3e50;
+}
+
+/* A few custom styles for date inputs */
+input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    color: #95a5a6;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 22px;
+    border:1px solid #ecf0f1;
+    background:#ecf0f1;
+    padding:5px;
+    display: inline-block !important;
+    visibility: visible !important;
+}
+
+input[type="date"], focus {
+    color: #95a5a6;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+.displayOrderSuccess {
+    font-weight: bold;
+    background: lightgreen;
+    box-shadow: 
+}
+.success-box{
+    padding: 40px 0;  
+    overflow: hidden;
+    background-color: #12C06A;
+    background-size: cover;
+    background-position: center;
+}
+.box20{
+    width: 400px;
+    margin: 4% auto 0 auto;
+    color: green;
+
+}
+.success-message{
+    position: absolute;
+    top:0;
+    left:0; 
+    background-color: #00000085;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+}
+.success-message-child-h2 {
+    white-space: nowrap;
+    font-size: 30px;
+    filter: contrast(200%) brightness(150%);
+    font-size: 30px;
+    letter-spacing: 2px;
+}
