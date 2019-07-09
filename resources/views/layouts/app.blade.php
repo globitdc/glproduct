@@ -29,6 +29,7 @@
             <div class="selector"></div>
             <a href="#" class="active"><i class="fab fa-superpowers"></i>Home</a>
             <a href="#"><i class="fas fa-hand-rock">About us</i></a>
+            <a href="#"><i class="fas fa-hand-rock">About us just for testing git</i></a>
             <a href="#"><i class="fas fa-bolt"></i>page 3</a>
             <a href="#"><i class="fas fa-burn"></i>page 4</a>
           </nav>
