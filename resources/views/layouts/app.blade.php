@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,9 +22,19 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/top-menu.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/homePage.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/basket-count.css')}}"rel="stylesheet" type="text/css" >
+
+    {{-- Products Image Path --}}
+    <script type="text/javascript">
+        const productImagePath = "{{asset('assets/images/productImages')}}/"
+        const styleImagePath = "{{asset('assets/images')}}/"
+    </script>
+
 </head>
 <body>
     <div id="app">
+
         <div>
           <nav class="tabs">
             <div class="selector"></div>
@@ -33,10 +44,23 @@
             <a href="#"><i class="fas fa-burn"></i>page 4</a>
           </nav>
         </div>
+
+        <div class="basket-tools-parent-div" style="text-align: right;">
+            <img class="basket-icon" src={{asset('assets/images/basket-icon.png')}}>
+            <span style="font-size: 25px; color: green;">(</span>
+            <span style="font-size: 25px; color: green;" class="basket-count">0</span>
+            <span style="font-size: 25px; color: green;">)</span>
+            <div class="basket-tools-children-div">
+                
+            </div>
+        </div>
+
         <main class="py-4">
             @yield('content')
         </main>
     </div>
+
+    <script type="text/javascript" src = {{asset('assets/js/basket-product.js')}}></script>
     <script type="text/javascript" src = {{asset('assets/js/top-menu.js')}}></script>
     <script type="text/javascript" src = {{asset('assets/js/homePageFunctions.js')}}></script>
 </body>

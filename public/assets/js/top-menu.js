@@ -20,4 +20,5 @@ $( document ).ready(function() {
         "width": activeWidth + "px"
       });
     });
+
 });

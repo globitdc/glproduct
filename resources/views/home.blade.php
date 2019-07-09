@@ -8,8 +8,10 @@
     			<div class = "product-image">
     				<img src="{{ asset("assets/images/productImages/".$product['image']) }}" width="300">
     				<h5 class = "text-center">{{ $product['name'].-$product['price']."դրամ" }} </h5>
-    				<button class = "btn btn-success add-to-card" data-key= {{ $product['id'] }}>Պատվիրել</button>
+    				<button class = "add-to-card" data-key= {{ $product['id'] }}><span>Պատվիրել</span></button>
+                    {{-- <button class="button"><span>Hover </span></button> --}}
     			</div>
+
     		</div>
     	@endforeach
     </div>
